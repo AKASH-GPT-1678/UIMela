@@ -1,0 +1,25 @@
+#mainWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+#cardsWrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.card{
+  width: 300px;
+  height: 175px;
+  background-color: red;
+  perspective: 500px;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg);
+}

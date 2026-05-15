@@ -17,6 +17,8 @@
   --font-mono: var(--font-geist-mono);
     --animate-fade : fade 1s ease-in infinite;
     --animate-pulse : pulse 2s ease-in-out infinite;
+    --animate-dance : dance 5s ease-in  infinite;
+    
 
 }
 
@@ -111,4 +113,62 @@ body {
   100%{
     transform: opacity(1);
   }
+}
+
+
+@keyframes dance {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+
+  10% {
+    transform: translate(100px , -150px);
+  }
+  20% {
+    transform: translate(200px , -100px);
+  }
+  30% {
+    transform: translate(300px , -150px);
+  }
+  40% {
+    transform: translate(400px , -100px);
+  }
+  50% {
+    transform: translate(500px , -150px);
+  }
+  60% {
+    transform: translate(600px , -100px);
+  }
+  70% {
+    transform: translate(700px , -150px);
+  }
+  80% {
+    transform: translate(800px , -100px);  
+  }
+  90% {
+    transform: translate(900px , -150px);
+  }
+  100% {
+    transform: translate(1000px , -100px);
+
+  }
+
+
+}
+@keyframes spinSlow {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 8s linear infinite;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
 }
